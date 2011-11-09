@@ -20,7 +20,7 @@ public class WordCountMapper
     @Override
     protected void map(LongWritable key, Text value, Context context)
             throws IOException, InterruptedException {
-        logger.debug("input: ({}, {}", key, value);
+        logger.debug("input: ({}, {})", key, value);
         String line = value.toString();
         String[] words = line.split("[\\s\\p{Punct}]+");
         for (String word : words) {
