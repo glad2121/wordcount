@@ -9,6 +9,11 @@ import org.apache.hadoop.mapreduce.Mapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * 行を単語に分解する Mapper。
+ * 
+ * @author ITO Yoshiichi
+ */
 public class WordCountMapper
         extends Mapper<LongWritable, Text, Text, IntWritable> {
 
@@ -20,7 +25,7 @@ public class WordCountMapper
     @Override
     protected void map(LongWritable key, Text value, Context context)
             throws IOException, InterruptedException {
-        logger.debug("input: ({}, {}", key, value);
+        logger.debug("input: ({}, {})", key, value);
         String line = value.toString();
         String[] words = line.split("[\\s\\p{Punct}]+");
         for (String word : words) {
