@@ -10,6 +10,11 @@ import org.apache.hadoop.mapreduce.Reducer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * 単語の出現頻度を集計する Reducer。
+ * 
+ * @author ITO Yoshiichi
+ */
 public class WordCountReducer
         extends Reducer<Text, IntWritable, Text, IntWritable> {
 
