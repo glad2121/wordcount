@@ -12,6 +12,11 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+/**
+ * {@link WordCountReducer} の単体テスト。
+ * 
+ * @author ITO Yoshiichi
+ */
 public class WordCountReducerTest {
 
     WordCountReducer reducer;

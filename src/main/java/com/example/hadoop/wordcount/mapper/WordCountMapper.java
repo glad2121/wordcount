@@ -9,6 +9,11 @@ import org.apache.hadoop.mapreduce.Mapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * 行を単語に分解する Mapper。
+ * 
+ * @author ITO Yoshiichi
+ */
 public class WordCountMapper
         extends Mapper<LongWritable, Text, Text, IntWritable> {
 

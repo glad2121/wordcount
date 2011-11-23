@@ -9,6 +9,11 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+/**
+ * {@link WordCountMapper} の単体テスト。
+ * 
+ * @author ITO Yoshiichi
+ */
 public class WordCountMapperTest {
 
     WordCountMapper mapper;
